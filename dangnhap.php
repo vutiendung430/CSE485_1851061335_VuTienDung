@@ -15,7 +15,7 @@ if(isset($_POST['submit']) && $_POST['email']!= "" && $_POST['pass']!= "")
     echo'<script> alert("Tên đăng nhập hoặc mật khẩu không chính xác");</script>';
     include("admin.php");
     }
-    if($email != $d[1])
+    else if($email != $d[1])
     {
     echo'<script> alert("Tên đăng nhập hoặc mật khẩu không chính xác");</script>';
     include("admin.php");
